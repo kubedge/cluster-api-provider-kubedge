@@ -1,0 +1,9 @@
+apiVersion: kubedge.kubedge.cloud/v1alpha1
+kind: KubedgeMachineProviderSpec
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: kubedgemachineproviderspec-sample
+spec:
+  # Add fields here
+  foo: bar

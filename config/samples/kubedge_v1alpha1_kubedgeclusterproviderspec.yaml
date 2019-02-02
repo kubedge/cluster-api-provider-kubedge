@@ -1,0 +1,9 @@
+apiVersion: kubedge.kubedge.cloud/v1alpha1
+kind: KubedgeClusterProviderSpec
+metadata:
+  labels:
+    controller-tools.k8s.io: "1.0"
+  name: kubedgeclusterproviderspec-sample
+spec:
+  # Add fields here
+  foo: bar
