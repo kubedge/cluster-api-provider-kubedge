@@ -1,0 +1,3 @@
+version: "1"
+domain: kubedge.cloud
+repo: github.com/kubedge/cluster-api-provider-kubedge
