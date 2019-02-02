@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"os"
 
-	"sigs.k8s.io/cluster-api-provider-kubedge/pkg/apis"
-	"sigs.k8s.io/cluster-api-provider-kubedge/pkg/cloud/kubedge/actuators/cluster"
-	"sigs.k8s.io/cluster-api-provider-kubedge/pkg/cloud/kubedge/actuators/machine"
+	"github.com/kubedge/cluster-api-provider-kubedge/pkg/apis"
+	"github.com/kubedge/cluster-api-provider-kubedge/pkg/cloud/kubedge/actuators/cluster"
+	"github.com/kubedge/cluster-api-provider-kubedge/pkg/cloud/kubedge/actuators/machine"
 	clusterapis "sigs.k8s.io/cluster-api/pkg/apis"
 	"sigs.k8s.io/cluster-api/pkg/apis/cluster/common"
 	"sigs.k8s.io/cluster-api/pkg/client/clientset_generated/clientset"

@@ -17,7 +17,7 @@ limitations under the License.
 package controller
 
 import (
-	"sigs.k8s.io/cluster-api-provider-kubedge/pkg/cloud/kubedge/actuators/machine"
+	"github.com/kubedge/cluster-api-provider-kubedge/pkg/cloud/kubedge/actuators/machine"
 	capimachine "sigs.k8s.io/cluster-api/pkg/controller/machine"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 )
