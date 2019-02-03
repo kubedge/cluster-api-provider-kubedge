@@ -6,8 +6,7 @@ all: test manager
 
 # Run tests
 test: generate fmt vet manifests
-#	JEB: Need to fix conflict between local etcd and kubernetes
-#	go test ./pkg/... ./cmd/... -coverprofile cover.out
+	go test ./pkg/... ./cmd/... -coverprofile cover.out
 
 # Build manager binary
 manager: generate fmt vet
@@ -28,7 +27,7 @@ deploy: manifests
 # Generate manifests e.g. CRD, RBAC etc.
 manifests:
 	go run vendor/sigs.k8s.io/controller-tools/cmd/controller-gen/main.go crd
-	kustomize build config/default > provider-components.yaml
+	kustomize build config/default/ > provider-components.yaml
 	echo "---" >> provider-components.yaml
 	kustomize build vendor/sigs.k8s.io/cluster-api/config/default/ >> provider-components.yaml
 
