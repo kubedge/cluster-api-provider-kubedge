@@ -25,10 +25,27 @@ rules:
   - update
   - patch
   - delete
+#- apiGroups:
+#  - kubedgeproviderconfig.k8s.io
+#  resources:
+#  - kubedgeclusterproviderconfigs
+#  - kubedgemachineproviderconfigs
+#  verbs:
+#  - get
+#  - list
+#  - watch
+#  - create
+#  - update
+#  - patch
+#  - delete
 - apiGroups:
-  - ""
+  - cluster.k8s.io
   resources:
-  - secrets
+  - clusters
+  - machines
+  - machines/status
+  - machinedeployments
+  - machinesets
   verbs:
   - get
   - list
@@ -40,6 +57,9 @@ rules:
 - apiGroups:
   - ""
   resources:
+  - nodes
+  - events
+  - secrets
   - services
   verbs:
   - get
