@@ -852,6 +852,16 @@
   digest = "1:ef04c20bf6f1dcd5e1cd1fd27a65675649dfed58e89699fe2891cccc0a233efd"
   name = "sigs.k8s.io/cluster-api"
   packages = [
+    "cmd/clusterctl/clientcmd",
+    "cmd/clusterctl/clusterdeployer",
+    "cmd/clusterctl/clusterdeployer/bootstrap",
+    "cmd/clusterctl/clusterdeployer/bootstrap/existing",
+    "cmd/clusterctl/clusterdeployer/bootstrap/minikube",
+    "cmd/clusterctl/clusterdeployer/clusterclient",
+    "cmd/clusterctl/cmd",
+    "cmd/clusterctl/phases",
+    "cmd/clusterctl/providercomponents",
+    "cmd/clusterctl/validation",
     "pkg/apis",
     "pkg/apis/cluster/common",
     "pkg/apis/cluster/v1alpha1",
@@ -861,6 +871,7 @@
     "pkg/controller/cluster",
     "pkg/controller/error",
     "pkg/controller/machine",
+    "pkg/controller/noderefutil",
     "pkg/util",
   ]
   pruneopts = "T"
@@ -968,6 +979,7 @@
     "k8s.io/client-go/rest",
     "k8s.io/code-generator/cmd/client-gen",
     "k8s.io/code-generator/cmd/deepcopy-gen",
+    "sigs.k8s.io/cluster-api/cmd/clusterctl/cmd",
     "sigs.k8s.io/cluster-api/pkg/apis",
     "sigs.k8s.io/cluster-api/pkg/apis/cluster/common",
     "sigs.k8s.io/cluster-api/pkg/apis/cluster/v1alpha1",
